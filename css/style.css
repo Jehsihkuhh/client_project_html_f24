@@ -1,0 +1,38 @@
+body{
+    background-color: lightblue; 
+}
+
+h1{
+    font-size: 15px; 
+    font-family: 'Courier New';
+    text-align: center; 
+}
+
+h2{
+    font-size: 15px; 
+    font-family: 'Courier New';
+    color: red;
+}
+
+h3{
+    font-size: 12px; 
+    font-family: 'Courier New', Courier monospace;
+    color: red;
+}
+
+p{
+    line-height: 20px;
+}
+
+img{
+    border: 5px solid green; 
+
+}
+
+.active{
+
+}
+
+.skip {
+    
+}
