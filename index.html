@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Michigan</title>
 </head>
 <body>
-    <a href ="#main-content">Skip to Main Content</a>
+    <a class="skip" href="#main-content">Skip to Main Content</a>
     <header>
-        <img src="/images/u-m_logo-hex-withoutline.png" alt="Michigan Logo">
+        <img src="/images/resized-u-m_logo-hex-withoutline.png" alt="Michigan Logo"> 
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
+                <li class="active"><a href = "index.html">Home</a></li>
                 <li><a href = "firstgen.html">First-Generation Students</a></li>
                 <li><a href = "foodpantry.html">Student Food Cupboard</a></li>
                 <li><a href = "cew.html">Center For The Education of Women</a></li>
+                
             </ul>
         </nav>
     </header>
 
+    <h1>Welcome to the University of Michigan</h1>
+    <p>Welcome to the University of Michigan! Discover what makes our university a place where people come to grow, learn, and lead the future.</p>
+    <figure>
+        <img src="/images/UMSI_MichiganUnion_Reopening_18.jpg" alt="The University of Michigan Student Union">
+        <figcaption>Welcome to the University of Michigan where everyone is welcomed!</figcaption>
+    </figure>
 
-    <main id="main-content">
-        <h1>Welcome to the University of Michigan</h1>
-        <p>Welcome to the University of Michigan! Discover what makes our university a place where people come to grow, learn, and lead the future.</p>
-        <figure>
-            <img src="/images/UMSI_MichiganUnion_Reopening_18.jpg" alt="The University of Michigan Student Union">
-            <figcaption>Welcome to the University of Michigan where everyone is welcomed!</figcaption>
-        </figure>
-        <section>
+    <main class="main" id="main-content">
+        <section class="content-one">
             <h2>Who is the Maize & Blue?</h2>
             <p>The University of Michigan is a world-class institution renowned for its academic excellence, vibrant campus life, and cutting-edge research. Founded in 1817, U-M is dedicated to creating a diverse, inclusive, and transformative educational experience.</p>
             <h3><strong>Quick Facts:</strong></h3>
@@ -39,7 +42,7 @@
         </section>
 
 
-        <section>
+        <section class="content-two">
             <h2>Why Michigan?</h2>
             <article>
                 <h3>Academics</h3>
@@ -53,20 +56,16 @@
                 <h3>Research</h3>
                 <p>Join a thriving research community making groundbreaking discoveries across disciplines</p>
             </article>
-        </section>     
-
-
-        <section>
+   
             <h2>Testimonials</h2>
                 <p>"The University of Michigan has provided me with unparalleled opportunities and a supportive community."</p> 
              <h3>— Jamie, Class of '23</h3>
 
                 <p>"My time at U-M was transformative. The experiences and connections I made here set the foundation for my career success."</p>
             <h3>— Alex, Class of '15</h3>
-           </section>
-
-
-        <section id="life-outside-classroom">
+        </section>  
+       
+        <section class="content-three">
             <h2>Life Outside the Classroom</h2>
             <p>There are many ways to take advantage of what this university has to offer. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside of academics:</p>
             <ul>
@@ -78,6 +77,7 @@
             </ul>
         </section>
     </main>
+
     <footer>
        <p>University Contact Information:
          Address: 500 S. State Street, Ann Arbor, MI 48109</p> 
