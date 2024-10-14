@@ -67,6 +67,26 @@ nav ul {
 
 }
 
+footer .mailto {
+    background-color: #FFCB05;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+footer .mailto:hover {
+    color: #ffffff;
+    background-color: #FFCB05; 
+    font-weight: bold;
+    padding: 5px 5px;
+}
+
+footer .mailto:focus {
+    outline: 3px solid #00B2A9; 
+    font-weight: bold;  
+    padding: 10px 10px;
+
+}
+
 nav ul li a {
     color: #ffffff; 
     text-decoration: none;
@@ -137,8 +157,76 @@ nav ul li a.active{
     grid-column: 1 / -1; 
 }
 
+.content-three .event-calendar {
+    background-color: #FFCB05;
+    font-weight: bold;
+    border-radius: 20px;
+
+}
+
+.content-three .event-calendar:hover {
+    color: #ffffff;
+    background-color: #FFCB05; 
+    font-weight: bold;
+    padding: 5px 5px;
+}
+
+.content-three .event-calendar:focus {
+    outline: 3px solid #00B2A9; 
+    font-weight: bold;  
+    padding: 10px 10px;
+
+}
+
 figure {
     grid-column: 1 / -1; 
     text-align: center;
 }
+
+.index-page .content-three {
+    margin: 20px 0; 
+    padding: 20px; 
+}
+
+.index-page .content-three h2 {
+    margin-bottom: 15px; 
+}
+
+.index-page .content-three p {
+    margin-bottom: 20px; 
+}
+
+.index-page .content-three ul {
+    padding-left: 20px; 
+}
+
+.index-page .content-three ul li {
+    margin-bottom: 10px; 
+}
+
+.index-page .content-three ul li strong {
+    font-weight: bold;
+}
+
+.index-page .content-three ul li:last-child {
+    margin-bottom: 0; 
+}
+
+.first-gen-page .content-one h2 {
+    margin-bottom: 15px; 
+}
+
+.first-gen-page .content-one h3 {
+    margin-top: 20px;  
+    margin-bottom: 10px; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.first-gen-page .content-one p {
+    margin-bottom: 20px; 
+    line-height: 1.5; 
+    background-color: #e0e0e0; 
+}
+
 
