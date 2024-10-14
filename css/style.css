@@ -2,31 +2,32 @@ body{
     background-color: #ffffff; 
     color: #00274C; 
     font-family: 'Times New Roman', Times, serif;
+    font-size: 16px
 }
 
 h1{
-    font-size: 50px; 
+    font-size: 24px; 
     font-family:'Times New Roman', Times, serif; 
     font-weight: bolder;
     text-align: center; 
 }
 
 h2{
-    font-size: 25px; 
+    font-size: 20px; 
     font-family: 'Times New Roman', Times, serif; 
     font-weight: bold; 
     color: #00274C;
 }
 
 h3{
-    font-size: 15px; 
+    font-size: 18px; 
     font-family: 'Times New Roman', Times, serif; 
     color: #00274C;
     font-weight: bold;
 }
 
 p{
-    line-height: 20px;
+    line-height: 1.5;
 }
 
 
@@ -106,7 +107,7 @@ nav ul li a.active{
 }
 
 .content-two {
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
     background-color: #e0e0e0; 
 }
 
