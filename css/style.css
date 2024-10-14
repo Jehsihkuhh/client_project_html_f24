@@ -111,6 +111,28 @@ nav ul li a.active{
     background-color: #e0e0e0; 
 }
 
+.content-two h2 {
+    margin-bottom: 20px; 
+}
+
+.content-two h3 {
+    margin: 15px 0; 
+}
+
+.content-two p {
+    margin-bottom: 15px; 
+}
+
+.content-two ul, 
+.content-two ol {
+    margin-left: 20px; 
+    padding: 0; 
+}
+
+.content-two li {
+    margin-bottom: 20px; 
+}
+
 .content-three {
     grid-column: 1 / -1; 
 }
