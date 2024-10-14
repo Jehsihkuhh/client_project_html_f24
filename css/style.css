@@ -107,6 +107,7 @@ nav ul li a.active{
 
 .content-two {
     grid-column: 1 / -1; 
+    background-color: #e0e0e0; 
 }
 
 .content-three {
