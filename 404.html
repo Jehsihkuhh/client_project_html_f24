@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+</head>
+<body id="error-page">   
+
+<header>
+    <img src="images/resized-u-m_logo-hex-withoutline.png" alt="Michigan Logo"> 
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="firstgen.html">First-Generation Students</a></li>
+            <li><a href="foodpantry.html">Student Food Cupboard</a></li>
+            <li><a href="cew.html">Center For The Education of Women</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div id="error-words">
+        <h1 id="error-heading">404</h1>
+        <p>Uh oh! Were you expecting something here?</p>
+        <p>It looks like this page doesn't exist. Maybe try going down State St...? There's a lot over there!</p>   
+        <a href="/" id="redirect-button">Take Me Home</a>
+    </div>
+</main>
+
+<footer>
+    <p>University Contact Information:
+      Address: 500 S. State Street, Ann Arbor, MI 48109</p> 
+    <p>Phone: (734) 764-1817</p>
+    <p><a class="mailto" href="mailto:info@umich.edu">Email: info@umich.edu</a></p>
+    <p>© <span id="current-year">2024</span> University of Michigan. All rights reserved.</p>
+</footer>
+<script> document.getElementById("current-year").innerHTML = new Date().getFullYear();</script>
+
+</body>
+</html>

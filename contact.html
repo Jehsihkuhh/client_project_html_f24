@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/style.css"> -->
+    <title>Document</title>
+</head>
+
+<!-- Didn't know how to implement changed to the header and footer without contact form boxes disappearing, so I commented out the css links. -->
+
+<body>
+<header>
+    <img src="images/resized-u-m_logo-hex-withoutline.png" alt="Michigan Logo"> 
+    <nav>
+        <ul>
+            <li class="active"><a href = "index.html">Home</a></li>
+            <li><a href = "firstgen.html">First-Generation Students</a></li>
+            <li><a href = "foodpantry.html">Student Food Cupboard</a></li>
+            <li><a href = "cew.html">Center For The Education of Women</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      
+        <button type="submit">Submit</button>
+      </form>
+      
+      <script>
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+      
+          if (!name || !email || !message) {
+              alert('All fields are required!');
+          } else {
+              alert('Thank you for your message! We will get back to you soon.');
+          }
+      });
+      </script>
+    </main>
+
+    <footer class="contact-form-footer">
+        <p>University Contact Information:
+            Address: 500 S. State Street, Ann Arbor, MI 48109</p> 
+           <p>Phone: (734) 764-1817</p>
+           <p><a class="mailto" href="mailto:info@umich.edu">Email: info@umich.edu</a></p>
+           <p>© <span id="current-year">2024</span> University of Michigan. All rights reserved.</p>
+    </footer> 
+    <script> document.getElementById("current-year").innerHTML = new Date().getFullYear();</script>
+
+</body>
+</html>
