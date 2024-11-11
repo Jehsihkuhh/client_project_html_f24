@@ -1,231 +1,305 @@
-body{
-    background-color: #ffffff; 
-    color: #00274C; 
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px
-}
-
-h1{
-    font-size: 24px; 
-    font-family:'Times New Roman', Times, serif; 
-    font-weight: bolder;
-    text-align: center; 
-}
-
-h2{
-    font-size: 20px; 
-    font-family: 'Times New Roman', Times, serif; 
-    font-weight: bold; 
-    color: #00274C;
-}
-
-h3{
-    font-size: 18px; 
-    font-family: 'Times New Roman', Times, serif; 
-    color: #00274C;
-    font-weight: bold;
-}
-
-p{
-    line-height: 1.5;
-}
 
 
-footer {
-    background-color: #00274C; 
-    color: white;
+    body {
+        background-color: #ffffff; 
+        color: #00274C; 
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px
+    }
+    
+    h1{
+        font-size: 24px; 
+        font-family:'Times New Roman', Times, serif; 
+        font-weight: bolder;
+        text-align: center; 
+    }
+    
+    h2{
+        font-size: 20px; 
+        font-family: 'Times New Roman', Times, serif; 
+        font-weight: bold; 
+        color: #00274C;
+    }
+    
+    h3{
+        font-size: 18px; 
+        font-family: 'Times New Roman', Times, serif; 
+        color: #00274C;
+        font-weight: bold;
+    }
+    
+    p{
+        line-height: 1.5;
+    }
+    
+    
+    footer {
+        background-color: #00274C; 
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    header {
+        background-color: #00274C;
+        color: #ffffff;
+    }
+    
+    .skip {
+        position: absolute;
+        top: -40px; 
+        left: 0;
+        background-color: #004182; 
+        color: white;
+        padding: 10px;
+        text-decoration: solid; 
+    }
+    
+    .skip:focus {
+        top: 10px;
+        outline: 5px solid #00B2A9; 
+    }
+    
+    nav ul {
+        display: flex;
+        gap: 20px; 
+        justify-content: center;
+    }
+    
+    footer .mailto {
+        font-weight: bold;
+        border-radius: 20px;
+    }
+    
+    footer .mailto:hover {
+        color: #ffffff;
+        background-color: #FFCB05; 
+        font-weight: bold;
+        padding: 5px 5px;
+    }
+    
+    footer .mailto:focus {
+        outline: 3px solid #00B2A9; 
+        font-weight: bold;  
+        padding: 10px 10px;
+    }
+    
+    nav ul li a {
+        color: #ffffff; 
+        text-decoration: none;
+        padding: 5px;
+    }
+    
+    nav ul li a:hover {
+        color: #ffffff;
+        background-color: #FFCB05; 
+        font-weight: bold;
+        padding: 5px 5px;
+    }
+    
+    nav ul li a:focus {
+        outline: 3px solid #00B2A9; 
+        font-weight: bold;  
+        padding: 10px 10px;
+    }
+    
+    nav ul li a.active{
+        color: #FFFFFF; 
+        background-color: #004182; 
+        font-weight: bold;
+        border: 2px solid #FFCB05;
+        border-radius: 5px;
+    }
+
+
+
+    @media (min-width: 768px) {      
+        
+    /* Coding help from https://css-tricks.com/snippets/css/a-guide-to-flexbox/, https://yoksel.github.io/flex-cheatsheet/, and https://www.w3schools.com/css/css3_box-sizing.asp */
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .about-university,
+    .why-michigan,
+    .student-testimonials,
+    .campus-life {
+    flex: 1 1 30%;
+    box-sizing: border-box;
     padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    }  
+
+    .why-michigan p {
+        margin-bottom: 15px;
+    }
+
+    .why-michigan ul li {
+        margin-bottom: 10px;
+    }
+
+    .campus-life {
+        background-color: #FFCB05;
+    }
+
+    .campus-life p {
+        margin-bottom: 15px;
+    }
+
+    .campus-life strong {
+        font-weight: bold;
+    }
+
+    .campus-life ul li {
+        margin-bottom: 10px;
+    }
+
+    .first-gen-stories,
+    .academic-success,
+    .first-gen-events {
+    flex: 1 1 30%; 
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    }
+
+    .academic-success p {
+        margin-bottom: 15px;
+    }
+
+    .academic-success ul li {
+        margin-bottom: 10px;
+    }
+
+    .academic-success strong {
+        font-weight: bold;
+    }
+
+    .main-content h1,
+    .main-content h2 {
     text-align: center;
-    font-size: 14px;
-}
+    flex: 1 1 100%;
+    }
 
-header {
-    background-color: #00274C;
-    color: #ffffff;
-}
+    .first-gen-stories {
+        background-color: #FFCB05;
+    }
 
-.skip {
-    position: absolute;
-    top: -40px; 
-    left: 0;
-    background-color: #004182; 
-    color: white;
-    padding: 10px;
-    text-decoration: solid; 
-}
-
-.skip:focus {
-    top: 10px;
-    outline: 5px solid #00B2A9; 
-}
-
-nav ul {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 20px; 
-    justify-content: center;
-
-}
-
-footer .mailto {
-    font-weight: bold;
-    border-radius: 20px;
-}
-
-footer .mailto:hover {
-    color: #ffffff;
-    background-color: #FFCB05; 
-    font-weight: bold;
-    padding: 5px 5px;
-}
-
-footer .mailto:focus {
-    outline: 3px solid #00B2A9; 
-    font-weight: bold;  
-    padding: 10px 10px;
-
-}
-
-nav ul li a {
-    color: #ffffff; 
-    text-decoration: none;
-    padding: 5px;
-}
-
-nav ul li a:hover {
-    color: #ffffff;
-    background-color: #FFCB05; 
-    font-weight: bold;
-    padding: 5px 5px;
-}
-
-nav ul li a:focus {
-    outline: 3px solid #00B2A9; 
-    font-weight: bold;  
-    padding: 10px 10px;
-}
-
-nav ul li a.active{
-    color: #FFFFFF; 
-    background-color: #004182; 
-    font-weight: bold;
-    border: 2px solid #FFCB05;
-    border-radius: 5px;
-}
-
-.main {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px; 
-    margin: 20px; 
-}
-
-
-.content-one {
-    grid-column: 1 / -1; 
-}
-
-.content-two {
-    grid-column: 1 / -1;
-    background-color: #e0e0e0; 
-}
-
-.content-two h2 {
-    margin-bottom: 20px; 
-}
-
-.content-two h3 {
-    margin: 15px 0; 
-}
-
-.content-two p {
-    margin-bottom: 15px; 
-}
-
-.content-two ul, 
-.content-two ol {
-    margin-left: 20px; 
-    padding: 0; 
-}
-
-.content-two li {
-    margin-bottom: 20px; 
-}
-
-.content-three {
-    grid-column: 1 / -1; 
-}
-
-.content-three .event-calendar {
-    background-color: #FFCB05;
-    font-weight: bold;
-    border-radius: 20px;
-
-}
-
-.content-three .event-calendar:hover {
-    color: #ffffff;
-    background-color: #FFCB05; 
-    font-weight: bold;
-    padding: 5px 5px;
-}
-
-.content-three .event-calendar:focus {
-    outline: 3px solid #00B2A9; 
-    font-weight: bold;  
-    padding: 10px 10px;
-
-}
-
-figure {
-    grid-column: 1 / -1; 
-    text-align: center;
-}
-
-.index-page .content-three {
-    margin: 20px 0; 
-    padding: 20px; 
-}
-
-.index-page .content-three h2 {
-    margin-bottom: 15px; 
-}
-
-.index-page .content-three p {
-    margin-bottom: 20px; 
-}
-
-.index-page .content-three ul {
-    padding-left: 20px; 
-}
-
-.index-page .content-three ul li {
-    margin-bottom: 10px; 
-}
-
-.index-page .content-three ul li strong {
-    font-weight: bold;
-}
-
-.index-page .content-three ul li:last-child {
-    margin-bottom: 0; 
-}
-
-.first-gen-page .content-one h2 {
-    margin-bottom: 15px; 
-}
-
-.first-gen-page .content-one h3 {
+    .first-gen-stories {
     margin-top: 20px;  
     margin-bottom: 10px; 
-    font-size: 20px;
+    font-size: 18px;
+    }
+
+    .first-gen-stories h2 {
+        margin-bottom: 15px;
+    }
+
+    .first-gen-stories p {
+        margin-bottom: 15px;
+    }
+
+    .how-cupboard-works,
+    .cupboard-faq,
+    .cupboard-location {
+    flex: 1 1 30%; 
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;   
+    }
+
+    .color-wrap {
+        background-color: #FFCB05;
+    }
+
+    .cew-main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .cew-main h1, .cew-main h2 {
+        text-align: center;
+    }
+
+    .about-cew, .cew-events, .cew-how-to {
+        flex: 1; 
+        box-sizing: border-box;
+    }
+
+    .cew-events {
+        background-color: #e0e0e0; 
+        padding: 20px;
+    }
+
+    .cew-events p {
+        margin-bottom: 15px;
+    }
+    
+    .cew-events h3 {
+        margin: 15px 0;
+    }
+
+    .cew-events a {
+        font-weight: bold;
+    }
+
+    .cew-how-to {
+        background-color: #FFCB05;
+        padding: 20px;
+    }
+
+}
+
+
+/* 404 - Page Not Found, CSS */
+
+#error-page {
+  background-color: #ffff;
+}
+
+#error-heading {
+    font-size: 200px;
+    color: #cc0000; 
+    text-align: center;
     font-weight: bold;
+    position: relative;
 }
 
-.first-gen-page .content-one p {
-    margin-bottom: 20px; 
-    line-height: 1.5; 
-    background-color: #e0e0e0; 
+#error-words {
+    font-size: 20px; 
+    font-family: 'Times New Roman', Times, serif; 
+    color: #cc0000;
+    text-align: center;
+    position: relative;
 }
 
+#redirect-button {
+    display: inline-block;          /* Code help from https://www.shecodes.io/athena/4225-how-to-use-display-inline-block-property-in-css */
+    background-color: #2F65A7;     
+    color: white;                   
+    text-decoration: none;          
+    padding: 10px 10px;             
+    border-radius: 5px;             
+    font-size: 18px;                
+    font-weight: bold;             
+    text-align: center;
+}
+
+#redirect-button:focus {
+    outline: 3px solid #00B2A9; 
+    font-weight: bold;  
+    padding: 10px 10px;
+}
 
